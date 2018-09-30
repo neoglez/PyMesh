@@ -1,5 +1,6 @@
 [![CircleCI](https://circleci.com/gh/PyMesh/PyMesh/tree/master.svg?style=svg)](https://circleci.com/gh/PyMesh/PyMesh/tree/master)
 [![Build Status](https://travis-ci.org/PyMesh/PyMesh.svg?branch=master)](https://travis-ci.org/PyMesh/PyMesh)
+[![Build status](https://ci.appveyor.com/api/projects/status/pl99435px5c7xawr?svg=true)](https://ci.appveyor.com/project/neoglez/pymesh)
 [![Documentation Status](https://readthedocs.org/projects/pymesh/badge/?version=latest)](https://pymesh.readthedocs.io/en/latest/?badge=latest)
 
 
