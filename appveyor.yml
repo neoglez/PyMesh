@@ -7,9 +7,9 @@ init:
 install:
 - ps: choco install miniconda3
 - ps: refreshenv
+- ps: conda3 --info
 - ps: conda --info
 # maybe it is not conda but conda3
-- ps: conda3 --info
 
 build_script:
 # Create conda enviroment
