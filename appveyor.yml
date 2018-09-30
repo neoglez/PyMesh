@@ -1,0 +1,28 @@
+version: 1.0.{build}
+
+image: Visual Studio 2017 Preview
+
+init:
+
+- ps: ''
+
+install:
+- ps: choco install miniconda3 
+- ps: choco install vcpython27
+
+build_script:
+
+- cmd: >-
+    # Create conda enviroment
+    conda create -q -n test-environment python=2.7
+    activate test-environment
+    conda install cmake
+    # info on python executables
+    python --version
+    pip install setuptools
+    pip install -r python\requirements.txt
+    python -m pip install --upgrade pip
+    cd C:\projects\PyMesh
+    .\setup.py build
+    .\setup.py install --user --prefix=
+    python -c "import pymesh; pymesh.test()"
