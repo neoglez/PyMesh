@@ -7,9 +7,8 @@ init:
 install:
 - ps: choco install miniconda3
 - ps: refreshenv
-- ps: conda3 --info
+- ps: SETX PATH "%PATH%;C:\tools\miniconda3\Scripts;C:\tools\miniconda3"
 - ps: conda --info
-# maybe it is not conda but conda3
 
 build_script:
 # Create conda enviroment
